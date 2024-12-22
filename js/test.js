@@ -35,3 +35,4 @@ console.log(friends)
 // Заміна
 friends.splice(3,1, "Ivan")
 console.log(friends)
+
