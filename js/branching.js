@@ -23,7 +23,7 @@
 // } else if (userAge >= 60 && userAge < 130){
 //     alert("Ти старий")
 // } else {
-//     alert("НЕБРЕШІТЬ ВЕДІТЬ СВІЙ РЕАЛЬНИЙ ВІК")
+//     alert("НЕ БРЕШІТЬ ВЕДІТЬ СВІЙ РЕАЛЬНИЙ ВІК")
 // }
 
 // const goSchool = confirm("Ти ходиш до школи")
@@ -181,7 +181,7 @@
 //     alert('Маємо надію, що ця сторінка виглядає добре!' );
 //   }
 
-// let browser = prompt("Ведіть свій бровзер")
+// let browser = prompt("Ведіть свій браузер")
 
 // switch (browser) {
 //     case "Edge" :

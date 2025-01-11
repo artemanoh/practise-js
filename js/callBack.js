@@ -79,7 +79,7 @@
 //   for (let i = 0; i < arrayData.length; i++) {
 //     resultAllArray += arrayData[i];
 //   }
-//   // крок 2 ділемо на кількість чисел
+//   // крок 2 ділимо на кількість чисел
 //   const averageScore = resultAllArray / arrayData.length
 
 //   return averageScore;

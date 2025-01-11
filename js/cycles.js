@@ -52,7 +52,7 @@
 // // крок 10
 // // збільшуємо ітерацію i += 1 тобто 4 = 4 + 1 тобто вийде i = 5
 // // крок 11
-// // тепер в i лежить 3 і ми перівіряємо умову на шостому колі i < 5 тобто 3 < 5 це буде false
+// // тепер в i лежить 5 і ми перевіряємо умову на шостому колі i < 5 тобто 5 < 5 це буде false
 // буде зациклення
 // let year = prompt("How old are you");
 // while (year > 18){
@@ -68,7 +68,7 @@
 
 // цикл do while
 // let savePas = 631936
-// let pasword ;
+// let pasword = "";
 // do {
 // pasword = Number(prompt("pls pasword"))
 // } while (pasword !== savePas)
