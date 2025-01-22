@@ -142,3 +142,48 @@ names.sort((prevName, nextName) => {
 return prevName.localeCompare(nextName)
 })
 console.log(names)
+
+// Порахувати загальну кількість товарів в кошику
+
+
+
+
+
+
+const cart = [
+  { label: 'Apples', price: 100, quantity: 2 },
+  { label: 'Bananas', price: 120, quantity: 3 },
+  { label: 'Lemons', price: 70, quantity: 4 },
+];
+
+const filteredProduct = cart.reduce((filteredByPrice, product) =>{
+if (product.price > 100) {
+  filteredByPrice.push(product)
+}
+return filteredByPrice
+}, [])
+console.log(filteredProduct)
+
+const totalAmount = cart.reduce((quan, product) => {
+return quan + product.quantity
+}, 0)
+
+console.log(totalAmount);
+
+// const filteredLemons = cart.reduce((acc, product) =>{
+//   if (product.label === 'Lemons') {
+//     acc.push(product.label)
+//   }
+//   return acc
+// }, [])
+
+// console.log(...filteredLemons)
+
+const filteredLemons = cart.reduce((acc, product) =>{
+  if (product.label === 'Lemons') {
+   acc = {...product}
+  }
+  return acc
+}, {})
+
+console.log(filteredLemons)
