@@ -42,3 +42,37 @@
 // }
 
 // console.log(total); // Вивід загальної суми
+
+
+const fruits = ["apple", "banana", "grapefruit", "cherry", "orange"];
+console.log("Фрукти, які у нас є:", fruits);
+const oldFruit = prompt("Який фрукт ви хочете видалити?");
+const newFruit = prompt("На який саме фрукт його замінити?");
+const index = fruits.indexOf(oldFruit);
+let newFruits;
+if (index !== -1) {
+  newFruits = fruits.filter((fruit, i) => {
+    return fruit !== oldFruit || i !== index;
+  });
+  newFruits.splice(index, 0, newFruit);
+  console.log("Тепер у нас є такі фрукти:", newFruits);
+} else {
+    console.log("Цього фрукта у нас нажаль немає:(")
+}
+
+    // const index = fruits.indexOf(oldFruit)
+// if (index !== -1) {
+//     fruits.splice(index, 1, newFruit)
+// } else {
+//     console.log("Такого фрукта у нас на жаль немає")
+// }
+
+
+
+
+
+
+
+
+
+
