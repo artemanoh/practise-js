@@ -1,0 +1,74 @@
+// Для того щоб отримати посилання у JS на елемент з HTML (з DOM дерева) використовуємо метод queryselector()
+const boxElement = document.querySelector('.box')
+console.log(boxElement)
+boxElement.style.backgroundColor = `blue`;
+const boxElements = document.querySelectorAll(`div`)
+console.log(boxElements)
+boxElements.forEach((divElement) => {
+divElement.style.boxShadow = "2px 3px 15px 3px grey"
+})
+const titleEle = boxElement.firstElementChild
+console.log(titleEle)
+
+const lastBox = boxElement.lastElementChild
+console.log(lastBox)
+
+const nextBox = boxElement.nextElementSibling
+console.log(nextBox)
+
+console.log(boxElement.children)
+
+const photoElement = document.querySelector(`img`)
+console.log(photoElement)
+
+photoElement.src = "data:image/webp;base64,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"
+photoElement.alt = "hello world"
+
+const addText = document.querySelector("h2")
+console.log(addText)
+addText.textContent = "cjfi"
+
+
+const hasClassText = addText.classList.contains("text")
+
+console.log(hasClassText)
+
+addText.classList.add("text")
+console.log(addText)
+
+
+console.log(addText.classList.contains("text"))
+
+addText.classList.remove("text")
+console.log(addText)
+
+
+
+// створити статтю в якій є заголовок опис рецепта картинку та посилання на сам рецепт
+
+const articleElement = document.createElement("article")
+console.log(articleElement)
+
+const titleArticle = document.createElement("h2")
+titleArticle.textContent = "рецепт млинців"
+console.log(titleArticle)
+
+articleElement.append(titleArticle)
+
+const descriptionRecept = document.createElement("p")
+descriptionRecept.textContent = "мука - 3 ст ложки"
+
+articleElement.append(descriptionRecept)
+
+const imagePanCakes = document.createElement("img")
+
+imagePanCakes.src = ""
+imagePanCakes.alt = "imxnjwe"
+
+articleElement.append(imagePanCakes)
+
+const linkName = document.createElement("a")
+linkName.href = ""
+linkName.textContent = "cbhbjf"
+
+articleElement.append(titleArticle, descriptionRecept, imagePanCakes, linkName)
