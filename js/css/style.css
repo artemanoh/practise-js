@@ -1,0 +1,20 @@
+.fruit-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.fruit-item {
+    max-width: 300px;
+    box-shadow: 4px 4px 10px 6px;
+}
+
+img {
+  width: 100%;
+    max-width: 100%;
+}
+
+#box {
+background: red;
+}
